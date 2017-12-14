@@ -22,25 +22,25 @@
       <div class="carousel-item active">
         <img class="d-block w-100" src="img/slide1.jpg" alt="First slide">
         <div class="carousel-caption d-none d-md-block text-right">
-          <h5><a class="text-success" href="https://www.flickr.com/photos/ittfworld/collections/72157690129937915/">2017<br/>World Junior<br/>Table Tennis<br/>Championships</a><br/><br/><br/><br/><br/><br/></h5>
+          <h5><a class="text-success" href="https://www.flickr.com/photos/ittfworld/collections/72157690129937915/">Source Photos:<br>2017<br>World Junior<br>Table Tennis<br>Championships</a></h5>
         </div>
       </div>
       <div class="carousel-item">
         <img class="d-block w-100" src="img/slide2.jpg" alt="Second slide">
         <div class="carousel-caption d-none d-md-block text-left">
-          <h5><a class="text-warning" href="https://www.flickr.com/photos/ittfworld/collections/72157690129937915/">2017<br/>World Junior<br/>Table Tennis<br/>Championships</a><br/><br/><br/></h5>
+          <h5><a class="text-warning" href="https://www.flickr.com/photos/ittfworld/collections/72157690129937915/">Source Photos:<br>2017<br>World Junior<br>Table Tennis<br>Championships</a></h5>
         </div>
       </div>
       <div class="carousel-item">
         <img class="d-block w-100" src="img/slide3.jpg" alt="Third slide">
         <div class="carousel-caption d-none d-md-block text-left">
-          <h5><a class="text-info" href="https://www.flickr.com/photos/ittfworld/collections/72157690129937915/">2017 World Junior<br/>Table Tennis Championships</a><br/><br/><br/><br/><br/><br/></h5>
+          <h5><a class="text-info" href="https://www.flickr.com/photos/ittfworld/collections/72157690129937915/">Source Photos:<br>2017 World Junior<br>Table Tennis Championships</a></h5>
         </div>
       </div>
       <div class="carousel-item">
         <img class="d-block w-100" src="img/slide4.jpg" alt="Third slide">
         <div class="carousel-caption d-none d-md-block">
-          <h5><a class="text-danger" href="https://www.flickr.com/photos/ittfworld/collections/72157690129937915/">2017<br/>World Junior<br/>Table Tennis<br/>Championships</a><br/><br/><br/></h5>
+          <h5><a class="text-danger" href="https://www.flickr.com/photos/ittfworld/collections/72157690129937915/">Source Photos:<br>2017<br>World Junior<br>Table Tennis<br>Championships</a></h5>
         </div>
       </div>
     </div>
@@ -81,9 +81,7 @@
 
   <button type="button" class="btn btn-outline-danger mb-2" disabled><em>Button Component --></em></button>
   <button type="button" class="btn btn-danger mb-2 btn_card active" id="btn_card1" name="Card1 is ">Card1 is ON</button>
-  <button type="button" class="btn btn-danger mb-2 btn_card" id="btn_card2" name="Card2 is ">Card2 is OFF</button>
-  <button type="button" class="btn btn-danger mb-2 btn_card" id="btn_card3" name="Card3 is ">Card3 is OFF</button>
-  <button type="button" class="btn btn-danger mb-2 btn_card" id="btn_card4" name="Card4 is ">Card4 is OFF</button>
+  <button type="button" class="btn btn-danger mb-2 btn_card" id="btn_card2" name="Card2-4 is ">Card2-4 is OFF</button>
   <button type="button" class="btn btn-danger mb-2 btn_card" id="btn_card5" name="Card5 is ">Card5 is OFF</button>
   <button type="button" class="btn btn-danger mb-2 btn_card" id="btn_card6" name="Card6 is ">Card6 is OFF</button>
   <button type="button" class="btn btn-danger mb-2 btn_card" id="btn_card7" name="Card7 is ">Card7 is OFF</button>
@@ -96,7 +94,7 @@
       <img class="card-img-top" src="img/card1.jpg" alt="Card image cap">
       <div class="card-body" id="card1_radio_body">
         <h4 class="card-title"><em>Card1 Component</em></h4>
-        <p class="card-text">This card has a image cap, a title, a supporting text and a link in the footer and hasn't a subtitle and a header.</p>
+        <p class="card-text">This card has a image cap, a title, a supporting text with align radios and a link in the footer and hasn't a subtitle and a header.</p>
         <p class="card-text text-danger"><em>Button group Component</em>:</p>
         <div class="btn-group btn-group-sm" data-toggle="buttons" role="group" aria-label="Button group Component">
           <label class="btn btn-danger card1_radio" id="card1_radio1">
@@ -111,39 +109,69 @@
         </div>
       </div>
       <div class="card-footer">
-        <a href="https://www.facebook.com/yogajournal.ru/videos/10156203268252069/" class="btn btn-danger">Source Link</a>
+        <a href="https://www.facebook.com/yogajournal.ru/videos/10156203268252069/" class="btn btn-danger">Source Photos</a>
       </div>
     </div>
-    <div class="card col-lg-3 col-sm-6 p-1 text-center" id="btn_card2_card" style="display: none;">
-      <img class="card-img-top" src="img/card2.jpg" alt="Card image cap">
-      <div class="card-body">
-        <h4 class="card-title">Card2 Component</h4>
-        <p class="card-text">This card has a image cap, a title, a supporting text and a link in the footer and hasn't a subtitle and a header.</p>
+
+
+    <div class="card col-lg-3 col-sm-6 p-1 bg-light text-center" id="btn_card2_card" style="display: none;">
+      <div id="accordion" role="tablist">
+
+        <div class="card">
+          <div class="card-header" role="tab" id="headingOne">
+            <h5 class="mb-0">
+              <a data-toggle="collapse" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                Card2 Component
+              </a>
+            </h5>
+          </div>
+          <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
+            <img class="card-img-top" src="img/card2.jpg" alt="Card image cap">
+            <div class="card-body">
+              <p class="card-text">This card has a <em>Collapsible</em> header, a image cap, a supporting text and a link in the footer and hasn't a title and a subtitle.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header" role="tab" id="headingTwo">
+            <h5 class="mb-0">
+              <a data-toggle="collapse" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                Card3 Component
+              </a>
+            </h5>
+          </div>
+          <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo" data-parent="#accordion">
+            <img class="card-img-top" src="img/card3.jpg" alt="Card image cap">
+            <div class="card-body">
+              <p class="card-text">This card has a <em>Collapsible</em> header, a image cap, a supporting text and a link in the footer and hasn't a title and a subtitle.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header" role="tab" id="headingTree">
+            <h5 class="mb-0">
+              <a data-toggle="collapse" href="#collapseTree" aria-expanded="true" aria-controls="collapseTree">
+                Card4 Component
+              </a>
+            </h5>
+          </div>
+          <div id="collapseTree" class="collapse" role="tabpanel" aria-labelledby="headingTree" data-parent="#accordion">
+            <img class="card-img-top" src="img/card4.jpg" alt="Card image cap">
+            <div class="card-body">
+              <p class="card-text">This card has a <em>Collapsible</em> header, a image cap, a supporting text and a link in the footer and hasn't a title and a subtitle.</p>
+            </div>
+          </div>
+        </div>
+
       </div>
       <div class="card-footer">
-        <a href="https://www.facebook.com/yogajournal.ru/videos/10156203268252069/" class="btn btn-danger">Source Link</a>
+        <a href="https://www.facebook.com/yogajournal.ru/videos/10156203268252069/" class="btn btn-danger">Source Photos</a>
       </div>
     </div>
-    <div class="card col-lg-3 col-sm-6 p-1 text-center" id="btn_card3_card" style="display: none;">
-      <img class="card-img-top" src="img/card3.jpg" alt="Card image cap">
-      <div class="card-body">
-        <h4 class="card-title">Card3 Component</h4>
-        <p class="card-text">This card has a image cap, a title, a supporting text and a link in the footer and hasn't a subtitle and a header.</p>
-      </div>
-      <div class="card-footer">
-        <a href="https://www.facebook.com/yogajournal.ru/videos/10156203268252069/" class="btn btn-danger">Source Link</a>
-      </div>
-    </div>
-    <div class="card col-lg-3 col-sm-6 p-1 text-center" id="btn_card4_card" style="display: none;">
-      <img class="card-img-top" src="img/card4.jpg" alt="Card image cap">
-      <div class="card-body">
-        <h4 class="card-title">Card4 Component</h4>
-        <p class="card-text">This card has a image cap, a title, a supporting text and a link in the footer and hasn't a subtitle and a header.</p>
-      </div>
-      <div class="card-footer card-footer-danger">
-        <a href="https://www.facebook.com/yogajournal.ru/videos/10156203268252069/" class="btn btn-danger">Source Link</a>
-      </div>
-    </div>
+
+
     <div class="card col-lg-3 col-sm-6 p-1 text-center" id="btn_card5_card"  style="display: none;">
       <img class="card-img-top" src="img/card5.jpg" alt="Card image cap">
       <div class="card-body">
@@ -204,9 +232,8 @@
         <a href="https://www.facebook.com/yogajournal.ru/videos/10156203268252069/" class="btn btn-danger">Source Link</a>
       </div>
     </div>
-  </div>
 
-
+</div> <!-- class row mx-0>
 
 </div>
 
