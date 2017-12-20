@@ -11,6 +11,10 @@
     }
 
     $(this).button('toggle');
+
+    if ($(this).attr("data-toggle") == "popover") {
+        $(this).popover('toggle');
+    }
 })
 
 $(".card1_radio").on("click", function() {
@@ -25,3 +29,13 @@ $(".card1_radio").on("click", function() {
         case "card1_radio3": $(card_body).toggleClass("text-right"); break;
     }
 })
+
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
+
+$(function () {
+  $('[data-toggle="popover"]').popover()
+})
+
+$("#btn_card1").popover('toggle');
