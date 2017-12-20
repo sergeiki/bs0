@@ -79,17 +79,18 @@
     </button>
   </div>
 
-  <button type="button" class="btn btn-outline-danger mb-2" disabled><em>Button Component --></em></button>
-  <button type="button" class="btn btn-danger mb-2 btn_card active" id="btn_card1" name="Card1 is ">Card1 is ON</button>
-  <button type="button" class="btn btn-danger mb-2 btn_card" id="btn_card2" name="Card2-4 is ">Card2-4 is OFF</button>
-  <button type="button" class="btn btn-danger mb-2 btn_card" id="btn_card5" name="Card5 is ">Card5 is OFF</button>
+  <button type="button" class="btn btn-outline-danger mb-2" disabled><em>Components: Button<br>with Tooltip or Popover --></em></button>
+  <button type="button" class="btn btn-danger mb-2 btn_card active" id="btn_card1" name="Card1 is " data-toggle="popover" data-placement="bottom" title="Popover for Card1" data-content="Press the button for hide/show Card1" data-trigger="manual">Card1 is ON</button>
+  <button type="button" class="btn btn-danger mb-2 btn_card" id="btn_card2" name="Card2-3 is ">Card2-3 is OFF</button>
+  <button type="button" class="btn btn-danger mb-2 btn_card" id="btn_card4" name="Card4-5 is " data-toggle="tooltip" data-placement="top" title="Tooltip for Card4-5" data-trigger="hover">Card4-5 is OFF</button>
   <button type="button" class="btn btn-danger mb-2 btn_card" id="btn_card6" name="Card6 is ">Card6 is OFF</button>
   <button type="button" class="btn btn-danger mb-2 btn_card" id="btn_card7" name="Card7 is ">Card7 is OFF</button>
   <button type="button" class="btn btn-danger mb-2 btn_card" id="btn_card8" name="Card8 is ">Card8 is OFF</button>
   <button type="button" class="btn btn-danger mb-2 btn_card" id="btn_card9" name="Card9 is ">Card9 is OFF</button>
-  <button type="button" class="btn btn-danger mb-2 btn_card" id="btn_card10" name="Card10 is ">Card10 is OFF</button>
+  <button type="button" class="btn btn-danger mb-2 btn_card" id="btn_card10" name="Card10 is " data-toggle="tooltip" data-placement="top" title="Tooltip for Card10" data-trigger="hover">Card10 is OFF</button>
 
   <div class="row mx-0">
+
     <div class="card col-lg-3 col-sm-6 p-1 bg-light text-center" id="btn_card1_card">
       <img class="card-img-top" src="img/card1.jpg" alt="Card image cap">
       <div class="card-body" id="card1_radio_body">
@@ -113,54 +114,37 @@
       </div>
     </div>
 
-
     <div class="card col-lg-3 col-sm-6 p-1 bg-light text-center" id="btn_card2_card" style="display: none;">
-      <div id="accordion" role="tablist">
+      <div class="card-body p-0" id="accordion24" role="tablist">
 
         <div class="card">
-          <div class="card-header" role="tab" id="headingOne">
+          <div class="card-header" role="tab" id="heading2">
             <h5 class="mb-0">
-              <a data-toggle="collapse" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                Card2 Component
+              <a data-toggle="collapse" href="#collapse2" aria-expanded="true" aria-controls="collapse2">
+                <em>Card2 Component</em>
               </a>
             </h5>
           </div>
-          <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
+          <div id="collapse2" class="collapse show" role="tabpanel" aria-labelledby="heading2" data-parent="#accordion24">
             <img class="card-img-top" src="img/card2.jpg" alt="Card image cap">
             <div class="card-body">
-              <p class="card-text">This card has a <em>Collapsible</em> header, a image cap, a supporting text and a link in the footer and hasn't a title and a subtitle.</p>
+              <p class="card-text">This card has a <em>Collapsible with bottom direction</em> header, a image cap, a supporting text and a link in the footer and hasn't a title and a subtitle.</p>
             </div>
           </div>
         </div>
 
         <div class="card">
-          <div class="card-header" role="tab" id="headingTwo">
+          <div class="card-header" role="tab" id="heading3">
             <h5 class="mb-0">
-              <a data-toggle="collapse" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-                Card3 Component
+              <a data-toggle="collapse" href="#collapse3" aria-expanded="true" aria-controls="collapse3">
+                <em>Card3 Component</em>
               </a>
             </h5>
           </div>
-          <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo" data-parent="#accordion">
+          <div id="collapse3" class="collapse" role="tabpanel" aria-labelledby="heading3" data-parent="#accordion24">
             <img class="card-img-top" src="img/card3.jpg" alt="Card image cap">
             <div class="card-body">
-              <p class="card-text">This card has a <em>Collapsible</em> header, a image cap, a supporting text and a link in the footer and hasn't a title and a subtitle.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="card">
-          <div class="card-header" role="tab" id="headingTree">
-            <h5 class="mb-0">
-              <a data-toggle="collapse" href="#collapseTree" aria-expanded="true" aria-controls="collapseTree">
-                Card4 Component
-              </a>
-            </h5>
-          </div>
-          <div id="collapseTree" class="collapse" role="tabpanel" aria-labelledby="headingTree" data-parent="#accordion">
-            <img class="card-img-top" src="img/card4.jpg" alt="Card image cap">
-            <div class="card-body">
-              <p class="card-text">This card has a <em>Collapsible</em> header, a image cap, a supporting text and a link in the footer and hasn't a title and a subtitle.</p>
+              <p class="card-text">This card has a <em>Collapsible with bottom direction</em> header, a image cap, a supporting text and a link in the footer and hasn't a title and a subtitle.</p>
             </div>
           </div>
         </div>
@@ -172,16 +156,47 @@
     </div>
 
 
-    <div class="card col-lg-3 col-sm-6 p-1 text-center" id="btn_card5_card"  style="display: none;">
-      <img class="card-img-top" src="img/card5.jpg" alt="Card image cap">
-      <div class="card-body">
-        <h4 class="card-title">Card5 Component</h4>
-        <p class="card-text">This card has a image cap, a title, a supporting text and a link in the footer and hasn't a subtitle and a header.</p>
+    <div class="card col-lg-3 col-sm-6 p-1 text-center" id="btn_card4_card"  style="display: none;">
+      <div class="card-body p-0" id="accordion45" role="tablist">
+
+        <div class="card">
+          <div class="card-header" role="tab" id="heading">
+            <h5 class="mb-0">
+              <a data-toggle="collapse" href="#collapse4" aria-expanded="true" aria-controls="collapse4">
+                <em>Card4 Component</em>
+              </a>
+            </h5>
+          </div>
+          <div id="collapse4" class="collapse show" role="tabpanel" aria-labelledby="heading4" data-parent="#accordion45">
+            <img class="card-img-top" src="img/card4.jpg" alt="Card image cap">
+            <div class="card-body">
+              <p class="card-text">This card has a <em>Collapsible with bottom direction</em> header, a image cap, a supporting text and a link in the footer and hasn't a title and a subtitle.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div id="collapse5" class="collapse" role="tabpanel" aria-labelledby="heading5" data-parent="#accordion45">
+            <img class="card-img-top" src="img/card5.jpg" alt="Card image cap">
+            <div class="card-body">
+              <p class="card-text">This card has a <em>Collapsible with bottom direction</em> header, a image cap, a supporting text and a link in the footer and hasn't a title and a subtitle.</p>
+            </div>
+          </div>
+          <div class="card-header" role="tab" id="heading5">
+            <h5 class="mb-0">
+              <a data-toggle="collapse" href="#collapse5" aria-expanded="true" aria-controls="collapse5">
+                <em>Card5 Component</em>
+              </a>
+            </h5>
+          </div>
+        </div>
+
       </div>
       <div class="card-footer">
-        <a href="https://www.facebook.com/yogajournal.ru/videos/10156203268252069/" class="btn btn-danger">Source Link</a>
+        <a href="https://www.facebook.com/yogajournal.ru/videos/10156203268252069/" class="btn btn-danger">Source Photos</a>
       </div>
     </div>
+
     <div class="card col-lg-3 col-sm-6 p-1 text-center" id="btn_card6_card" style="display: none;">
       <img class="card-img-top" src="img/card6.jpg" alt="Card image cap">
       <div class="card-body">
@@ -192,16 +207,7 @@
         <a href="https://www.facebook.com/yogajournal.ru/videos/10156203268252069/" class="btn btn-danger">Source Link</a>
       </div>
     </div>
-    <div class="card col-lg-3 col-sm-6 p-1 text-center" id="btn_card7_card" style="display: none;">
-      <img class="card-img-top" src="img/card7.jpg" alt="Card image cap">
-      <div class="card-body">
-        <h4 class="card-title">Card7 Component</h4>
-        <p class="card-text">This card has a image cap, a title, a supporting text and a link in the footer and hasn't a subtitle and a header.</p>
-      </div>
-      <div class="card-footer">
-        <a href="https://www.facebook.com/yogajournal.ru/videos/10156203268252069/" class="btn btn-danger">Source Link</a>
-      </div>
-    </div>
+
     <div class="card col-lg-3 col-sm-6 p-1 text-center" id="btn_card8_card" style="display: none;">
       <img class="card-img-top" src="img/card8.jpg" alt="Card image cap">
       <div class="card-body">
@@ -226,14 +232,24 @@
       <img class="card-img-top" src="img/card10.jpg" alt="Card image cap">
       <div class="card-body">
         <h4 class="card-title">Card10 Component</h4>
-        <p class="card-text">This card has a image cap, a title, a supporting text and a link in the footer and hasn't a subtitle and a header.</p>
+        <p class="card-text">This card has a image cap, a title, a supporting text and a <em>Component Dropup Link</em> in the footer and hasn't a card subtitle and a card header.</p>
       </div>
       <div class="card-footer">
-        <a href="https://www.facebook.com/yogajournal.ru/videos/10156203268252069/" class="btn btn-danger">Source Link</a>
+        <div class="btn-group dropup">
+          <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Card10 Info
+          </button>
+          <div class="dropdown-menu">
+            <h6 class="dropdown-header"><em>Dropup Component</em></h6>
+            <a class="dropdown-item disabled" href="https://www.facebook.com/yogajournal.ru/videos/10156203268252069/">Source Photo</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="https://www.facebook.com/yogajournal.ru/videos/10156203268252069/">Source Video</a>
+          </div>
+        </div>
       </div>
     </div>
 
-</div> <!-- class row mx-0>
+  </div> <!-- class row mx-0 -->
 
 </div>
 
