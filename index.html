@@ -7,7 +7,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
   <!-- Custom styles for this template -->
 </head>
 
@@ -60,8 +60,53 @@
     </ol>
   </div>
 
+  <div class="pos-f-t">
+    <nav class="navbar navbar-dark bg-dark">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <span class="navbar-text pl-3"><em><-- Navbar Component with Collapsed content toggleable via the navbar brand</em></span>
+    </nav>
+    <div class="collapse" id="navbarToggleExternalContent">
+      <div class="bg-dark p-4">
+        <div class="jumbotron">
+          <h1 class="display-4"><em>Jumbotron Component</em></h1>
+          <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+          <hr class="my-4">
+          <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+          <p class="lead">
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+              Launch demo Modal Component
+            </button>
+          </p>
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLongTitle">Modal Component title</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  Use Bootstrap’s JavaScript modal plugin to add dialogs to your site for lightboxes, user notifications, or completely custom content.
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <nav aria-label="breadcrumb" role="navigation">
-    <ol class="breadcrumb">
+    <ol class="breadcrumb m-0">
       <li class="breadcrumb-item"><a class="text-success" href="http://getbootstrap.com/">getbootstrap.com</a></li>
       <li class="breadcrumb-item"><a class="text-info" href="http://getbootstrap.com/docs/4.0/getting-started/introduction/">Documentation</a></li>
       <li class="breadcrumb-item active" aria-current="page">Components</li>
@@ -89,6 +134,24 @@
   <button type="button" class="btn btn-danger mb-2 btn_card" id="btn_card9" name="Card9 is ">Card9 is OFF</button>
   <button type="button" class="btn btn-danger mb-2 btn_card" id="btn_card10" name="Card10 is " data-toggle="tooltip" data-placement="top" title="Tooltip for Card10" data-trigger="hover">Card10 is OFF</button>
 
+  <nav aria-label="Page navigation example">
+    <ul class="pagination justify-content-end">
+      <li class="page-item disabled">
+        <a class="page-link" href="#" tabindex="-1">Previous</a>
+      </li>
+      <li class="page-item"><a class="page-link" href="#">1</a></li>
+      <li class="page-item"><a class="page-link" href="#">2</a></li>
+      <li class="page-item"><a class="page-link" href="#">3</a></li>
+      <li class="page-item">
+        <a class="page-link" href="#">Next</a>
+      </li>
+    </ul>
+  </nav>
+
+  <div class="progress mb-2">
+    <div class="progress-bar progress-bar-striped bg-danger" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">Progress Component - 80%</div>
+  </div>
+
   <div class="row mx-0">
 
     <div class="card col-lg-3 col-sm-6 p-1 bg-light text-center" id="btn_card1_card">
@@ -97,7 +160,7 @@
         <h4 class="card-title"><em>Card1 Component</em></h4>
         <p class="card-text">This card has a image cap, a title, a supporting text with align radios and a link in the footer and hasn't a subtitle and a header.</p>
         <p class="card-text text-danger"><em>Button group Component</em>:</p>
-        <div class="btn-group btn-group-sm" data-toggle="buttons" role="group" aria-label="Button group Component">
+        <div class="btn-group btn-group-toggle btn-group-sm" data-toggle="buttons" role="group" aria-label="Button group Component">
           <label class="btn btn-danger card1_radio" id="card1_radio1">
             <input type="radio" name="card1_radios" autocomplete="off">Left
           </label>
@@ -207,7 +270,16 @@
         <a href="https://www.facebook.com/yogajournal.ru/videos/10156203268252069/" class="btn btn-danger">Source Link</a>
       </div>
     </div>
-
+    <div class="card col-lg-3 col-sm-6 p-1 text-center" id="btn_card7_card" style="display: none;">
+      <img class="card-img-top" src="img/card7.jpg" alt="Card image cap">
+      <div class="card-body">
+        <h4 class="card-title">Card7 Component</h4>
+        <p class="card-text">This card has a image cap, a title, a supporting text and a link in the footer and hasn't a subtitle and a header.</p>
+      </div>
+      <div class="card-footer">
+        <a href="https://www.facebook.com/yogajournal.ru/videos/10156203268252069/" class="btn btn-danger">Source Link</a>
+      </div>
+    </div>
     <div class="card col-lg-3 col-sm-6 p-1 text-center" id="btn_card8_card" style="display: none;">
       <img class="card-img-top" src="img/card8.jpg" alt="Card image cap">
       <div class="card-body">
@@ -251,13 +323,31 @@
 
   </div> <!-- class row mx-0 -->
 
-</div>
+  <div class="row mx-0 py-3">
+    <div id="list-example" class="list-group col-3">
+      <button class="list-group-item text-danger" disabled><em>List group & Badge Component</em></button>
+      <a class="list-group-item list-group-item-action list-group-item-danger d-flex justify-content-between align-items-center" href="#list-item-1">Item 1 <span class="badge badge-danger badge-pill">11</span></a>
+      <a class="list-group-item list-group-item-action list-group-item-danger d-flex justify-content-between align-items-center" href="#list-item-2">Item 2 <span class="badge badge-danger badge-pill">1</span></a>
+      <a class="list-group-item list-group-item-action list-group-item-danger d-flex justify-content-between align-items-center" href="#list-item-3">Item 3 <span class="badge badge-danger badge-pill">5</span></a>
+    </div>
+    <div data-spy="scroll" data-target="#list-example" data-offset="0" class="scrollspy-example col-9" style="position: relative;height: 200px;overflow: auto;">
+      <h5 id="list-item-1" class="text-danger"><em>Scrollspy Component</em> Item 1</h5>
+      <p>Ex consequat commodo adipisicing exercitation aute excepteur occaecat ullamco duis aliqua id magna ullamco eu. Do aute ipsum ipsum ullamco cillum consectetur ut et aute consectetur labore. Fugiat laborum incididunt tempor eu consequat enim dolore proident. Qui laborum do non excepteur nulla magna eiusmod consectetur in. Aliqua et aliqua officia quis et incididunt voluptate non anim reprehenderit adipisicing dolore ut consequat deserunt mollit dolore. Aliquip nulla enim veniam non fugiat id cupidatat nulla elit cupidatat commodo velit ut eiusmod cupidatat elit dolore.</p>
+      <h5 id="list-item-2" class="text-danger"><em>Scrollspy Component</em> Item 2</h5>
+      <p>Ex consequat commodo adipisicing exercitation aute excepteur occaecat ullamco duis aliqua id magna ullamco eu. Do aute ipsum ipsum ullamco cillum consectetur ut et aute consectetur labore. Fugiat laborum incididunt tempor eu consequat enim dolore proident. Qui laborum do non excepteur nulla magna eiusmod consectetur in. Aliqua et aliqua officia quis et incididunt voluptate non anim reprehenderit adipisicing dolore ut consequat deserunt mollit dolore. Aliquip nulla enim veniam non fugiat id cupidatat nulla elit cupidatat commodo velit ut eiusmod cupidatat elit dolore.</p>
+      <h5 id="list-item-3" class="text-danger"><em>Scrollspy Component</em> Item 3</h5>
+      <p>Ex consequat commodo adipisicing exercitation aute excepteur occaecat ullamco duis aliqua id magna ullamco eu. Do aute ipsum ipsum ullamco cillum consectetur ut et aute consectetur labore. Fugiat laborum incididunt tempor eu consequat enim dolore proident. Qui laborum do non excepteur nulla magna eiusmod consectetur in. Aliqua et aliqua officia quis et incididunt voluptate non anim reprehenderit adipisicing dolore ut consequat deserunt mollit dolore. Aliquip nulla enim veniam non fugiat id cupidatat nulla elit cupidatat commodo velit ut eiusmod cupidatat elit dolore.</p>
+    </div>
+  </div> <!-- class row mx-0 -->	
+
+</div> <!-- class container -->
+
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/jquery-3.2.1.js"></script>
   <script src="js/popper.js"></script>
-  <script src="js/bootstrap.min.js"></script>
+  <script src="js/bootstrap.js"></script>
   <script src="js/bs0.js"></script>
 </body>
 
